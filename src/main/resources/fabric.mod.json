@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "frog",
+	"version": "${version}",
+	"name": "tutorial-mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/frog/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.foggy.frog.Tutorialmod"
+		],
+		"fabric-datagen": [
+			"net.foggy.frog.TutorialmodDataGenerator"
+		],
+		"client": [
+			"net.foggy.frog.frogclient"
+		]
+	},
+	"mixins": [
+		"frog.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
